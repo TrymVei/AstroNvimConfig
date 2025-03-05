@@ -48,6 +48,12 @@ return {
         ["<Tab>"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["<S-Tab>"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- window resizing with shift + arrow keys
+        ["<S-Right>"] = { "<cmd>vertical resize +2<CR>", desc = "Increase window width" },
+        ["<S-Left>"] = { "<cmd>vertical resize -2<CR>", desc = "Decrease window width" },
+        ["<S-Up>"] = { "<cmd>resize +2<CR>", desc = "Increase window height" },
+        ["<S-Down>"] = { "<cmd>resize -2<CR>", desc = "Decrease window height" },
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
