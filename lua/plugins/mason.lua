@@ -1,6 +1,21 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
+
+-- Installed
+--     ✓ astro-language-server astro
+--     ✓ csharp-language-server csharp_ls
+--     ✓ csharpier
+--     ✓ css-lsp cssls
+--     ✓ css-variables-language-server css_variables
+--     ✓ debugpy
+--     ✓ lua-language-server lua_ls
+--     ✓ omnisharp
+--     ✓ prettier
+--     ✓ python-lsp-server pylsp
+--     ✓ ruff
+--     ✓ stylua
+--     ✓ tailwindcss-language-server tailwindcss
+--     ✓ typescript-language-server ts_ls
+--     ✓ vue-language-server volar
 
 ---@type LazySpec
 return {
@@ -11,10 +26,20 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        -- add more arguments for adding more language servers
+        "astro",
+        "csharp_ls",
+        "cssls",
+        "css_variables",
+        "lua_ls",
+        "omnisharp",
+        "pylsp",
+        "tailwindcss",
+        "ts_ls",
+        "volar",
       },
     },
   },
+
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
     "jay-babu/mason-null-ls.nvim",
@@ -22,6 +47,9 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "csharpier",
+        "ruff",
+        "prettier",
         -- add more arguments for adding more null-ls sources
       },
     },
