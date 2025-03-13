@@ -7,7 +7,7 @@ return {
     },
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
-      model = "claude-3.7-sonnet", -- Specify the model to use
+      model = "gpt-4o", -- Specify the model to use
     },
     -- See Commands section for default commands if you want to lazy load on them
     keys = require "mapping.copilot-chat",
