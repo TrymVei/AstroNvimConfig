@@ -30,7 +30,7 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 2000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
@@ -44,9 +44,9 @@ return {
         filetypes = { "astro" },
       },
       --WARN: This might fuck the ts server. Use only while using vue
-      ts_ls = {},
+      -- ts_ls = {},
       volar = { -- add filetypes for typescript, javascript and vue
-        filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+        filetypes = { "vue" },
         init_options = {
           vue = {
             -- disable hybrid mode
