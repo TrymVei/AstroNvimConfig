@@ -35,6 +35,7 @@ return {
         "pylsp",
         "tailwindcss",
         "ts_ls",
+        "yamlls",
         -- "volar",
       },
     },
