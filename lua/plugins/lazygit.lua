@@ -8,6 +8,7 @@ return {
     "LazyGitFilter",
     "LazyGitFilterCurrentFile",
   },
+  config = function() require "configs.lazygit" end,
   -- optional for floating window border decoration
   dependencies = {
     "nvim-lua/plenary.nvim",
