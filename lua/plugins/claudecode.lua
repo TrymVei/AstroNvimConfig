@@ -23,7 +23,7 @@ return {
     terminal = {
       split_side = "right", -- "left" or "right"
       split_width_percentage = 0.30,
-      provider = "snacks", -- "auto", "snacks", "native", "external", "none", or custom provider table
+      provider = "auto", -- "auto", "snacks", "native", "external", "none", or custom provider table
       auto_close = true,
       snacks_win_opts = {}, -- Opts to pass to `Snacks.terminal.open()` - see Floating Window section below
 
@@ -41,7 +41,7 @@ return {
     diff_opts = {
       auto_close_on_accept = true,
       vertical_split = true,
-      open_in_current_tab = true,
+      open_in_current_tab = false,
       keep_terminal_focus = false, -- If true, moves focus back to terminal after diff opens
     },
   },
