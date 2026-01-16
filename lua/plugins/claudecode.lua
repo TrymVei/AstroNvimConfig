@@ -13,7 +13,7 @@ return {
 
     -- Send/Focus Behavior
     -- When true, successful sends will focus the Claude terminal if already connected
-    focus_after_send = true,
+    focus_after_send = false,
 
     -- Selection Tracking
     track_selection = true,
@@ -22,7 +22,7 @@ return {
     -- Terminal Configuration
     terminal = {
       split_side = "right", -- "left" or "right"
-      split_width_percentage = 0.30,
+      split_width_percentage = 0.10,
       provider = "auto", -- "auto", "snacks", "native", "external", "none", or custom provider table
       auto_close = true,
       snacks_win_opts = {}, -- Opts to pass to `Snacks.terminal.open()` - see Floating Window section below
