@@ -27,7 +27,6 @@ return {
       ensure_installed = {
         "lua_ls",
         "astro",
-        "csharp_ls",
         "cssls",
         "css_variables",
         "lua_ls",
@@ -48,7 +47,6 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
-        "csharpier",
         "ruff",
         "prettier",
         -- add more arguments for adding more null-ls sources
